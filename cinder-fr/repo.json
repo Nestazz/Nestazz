@@ -1,6 +1,6 @@
 {
-  "name": "Cinder – Sources en français",
-  "author": "Nestazz (adaptation française du catalogue TrexxyMon)",
+  "name": "Cinder – Bibliothèques et mangas en français",
+  "author": "Nestazz – adaptations VF d'extensions communautaires",
   "extensions": [
     {
       "id": "mangadex-fr",
@@ -31,6 +31,78 @@
         "ebook"
       ],
       "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/gutenberg-fr.js",
+      "minCinderVersion": "2.0.0"
+    },
+    {
+      "id": "annas-archive-fr",
+      "name": "Anna's Archive VF",
+      "version": "2.1.17",
+      "description": "Recherche de livres en français via le paramètre de langue fr. Téléchargements selon disponibilité.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/annas-archive-fr.js",
+      "minCinderVersion": "1.0.0"
+    },
+    {
+      "id": "bookracy-fr",
+      "name": "Bookracy VF",
+      "version": "0.1.2-cinder",
+      "description": "Recherche de livres EPUB/PDF/BD français sur Bookracy, filtrés selon la langue déclarée.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook",
+        "comic",
+        "manga"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/bookracy-fr.js",
+      "minCinderVersion": "2.0.0"
+    },
+    {
+      "id": "mayberry-fr",
+      "name": "Mayberry VF",
+      "version": "0.1.2-cinder",
+      "description": "Livres EPUB en français de la bibliothèque Mayberry, avec filtrage des métadonnées.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/mayberry-fr.js",
+      "minCinderVersion": "1.1.0"
+    },
+    {
+      "id": "zlibrary-fr",
+      "name": "Z-Library VF",
+      "version": "1.3.1",
+      "description": "Recherche Z-Library avec filtre français imposé ; connexion requise pour certains téléchargements.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/zlibrary-fr.js",
+      "minCinderVersion": "1.0.0"
+    },
+    {
+      "id": "libgen-fr",
+      "name": "LibGen VF",
+      "version": "0.1.7",
+      "description": "Livres LibGen dont la langue est explicitement française ; les notices sans langue sont exclues.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/libgen-fr.js",
       "minCinderVersion": "2.0.0"
     }
   ]
