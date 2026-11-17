@@ -1,0 +1,20 @@
+{
+  "name": "Cinder – Anna's Archive VF",
+  "author": "Nestazz – adaptations VF d'extensions communautaires",
+  "extensions": [
+    {
+      "id": "annas-archive-fr",
+      "name": "Anna's Archive VF",
+      "version": "2.1.17",
+      "description": "Recherche de livres en français via le paramètre de langue fr. Téléchargements selon disponibilité.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/annas-archive-fr.js",
+      "minCinderVersion": "1.0.0"
+    }
+  ]
+}
