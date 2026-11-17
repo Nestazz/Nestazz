@@ -1,0 +1,19 @@
+{
+  "name": "Cinder – Gallica BnF Français",
+  "author": "Nestazz",
+  "extensions": [
+    {
+      "id": "gallica-fr",
+      "name": "Gallica BnF Français",
+      "version": "1.0.0",
+      "description": "Livres de Gallica BnF en français, recherche dans les EPUB du domaine public.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/gallica-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
