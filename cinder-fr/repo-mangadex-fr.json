@@ -1,0 +1,24 @@
+{
+  "name": "Cinder – MangaDex Français",
+  "author": "Nestazz",
+  "extensions": [
+    {
+      "id": "mangadex-fr",
+      "name": "MangaDex Français",
+      "version": "1.0.0",
+      "description": "Recherche et lecture des mangas possédant des chapitres français, VF exclusivement.",
+      "language": "French",
+      "contentType": "manga",
+      "contentTypes": [
+        "manga"
+      ],
+      "contentSubtypes": [
+        "manga",
+        "manhwa",
+        "manhua"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/mangadex-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
