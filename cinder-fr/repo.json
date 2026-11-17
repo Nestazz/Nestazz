@@ -1,0 +1,37 @@
+{
+  "name": "Cinder – Sources en français",
+  "author": "Nestazz (adaptation française du catalogue TrexxyMon)",
+  "extensions": [
+    {
+      "id": "mangadex-fr",
+      "name": "MangaDex Français",
+      "version": "1.0.0",
+      "description": "Recherche et lecture des mangas possédant des chapitres français, VF exclusivement.",
+      "language": "French",
+      "contentType": "manga",
+      "contentTypes": [
+        "manga"
+      ],
+      "contentSubtypes": [
+        "manga",
+        "manhwa",
+        "manhua"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/mangadex-fr.js",
+      "minCinderVersion": "2.0.0"
+    },
+    {
+      "id": "gutenberg-fr",
+      "name": "Gutenberg Français",
+      "version": "1.0.0",
+      "description": "Livres EPUB du domaine public en français (filtrage par langue).",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/gutenberg-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
