@@ -1,5 +1,5 @@
 {
-  "name": "Cinder – Bibliothèques et mangas en français",
+  "name": "Cinder – Livres et mangas en français (catalogues élargis)",
   "author": "Nestazz – adaptations VF d'extensions communautaires",
   "extensions": [
     {
@@ -103,6 +103,32 @@
       ],
       "excludeFromDefaultMetadataProviders": true,
       "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/libgen-fr.js",
+      "minCinderVersion": "2.0.0"
+    },
+    {
+      "id": "wikisource-fr",
+      "name": "Wikisource Français",
+      "version": "1.0.0",
+      "description": "Livres français du domaine public et sous licences libres, EPUB via Wikisource Reader.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/wikisource-fr.js",
+      "minCinderVersion": "2.0.0"
+    },
+    {
+      "id": "gallica-fr",
+      "name": "Gallica BnF Français",
+      "version": "1.0.0",
+      "description": "Livres de Gallica BnF en français, recherche dans les EPUB du domaine public.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/gallica-fr.js",
       "minCinderVersion": "2.0.0"
     }
   ]
