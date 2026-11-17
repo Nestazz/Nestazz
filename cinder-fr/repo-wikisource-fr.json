@@ -1,0 +1,19 @@
+{
+  "name": "Cinder – Wikisource Français",
+  "author": "Nestazz",
+  "extensions": [
+    {
+      "id": "wikisource-fr",
+      "name": "Wikisource Français",
+      "version": "1.0.0",
+      "description": "Livres français du domaine public et sous licences libres, EPUB via Wikisource Reader.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/wikisource-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
