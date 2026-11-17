@@ -1,0 +1,20 @@
+{
+  "name": "Cinder – Mayberry VF",
+  "author": "Nestazz – adaptations VF d'extensions communautaires",
+  "extensions": [
+    {
+      "id": "mayberry-fr",
+      "name": "Mayberry VF",
+      "version": "0.1.2-cinder",
+      "description": "Livres EPUB en français de la bibliothèque Mayberry, avec filtrage des métadonnées.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/mayberry-fr.js",
+      "minCinderVersion": "1.1.0"
+    }
+  ]
+}
