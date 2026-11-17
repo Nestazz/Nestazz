@@ -1,0 +1,22 @@
+{
+  "name": "Cinder – Bookracy VF",
+  "author": "Nestazz – adaptations VF d'extensions communautaires",
+  "extensions": [
+    {
+      "id": "bookracy-fr",
+      "name": "Bookracy VF",
+      "version": "0.1.2-cinder",
+      "description": "Recherche de livres EPUB/PDF/BD français sur Bookracy, filtrés selon la langue déclarée.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook",
+        "comic",
+        "manga"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/bookracy-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
