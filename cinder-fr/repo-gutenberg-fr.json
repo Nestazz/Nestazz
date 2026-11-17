@@ -1,0 +1,19 @@
+{
+  "name": "Cinder – Gutenberg Français",
+  "author": "Nestazz",
+  "extensions": [
+    {
+      "id": "gutenberg-fr",
+      "name": "Gutenberg Français",
+      "version": "1.0.0",
+      "description": "Livres EPUB du domaine public en français (filtrage par langue).",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/gutenberg-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
