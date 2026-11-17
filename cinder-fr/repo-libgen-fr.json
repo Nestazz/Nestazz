@@ -1,0 +1,20 @@
+{
+  "name": "Cinder – LibGen VF",
+  "author": "Nestazz – adaptations VF d'extensions communautaires",
+  "extensions": [
+    {
+      "id": "libgen-fr",
+      "name": "LibGen VF",
+      "version": "0.1.7",
+      "description": "Livres LibGen dont la langue est explicitement française ; les notices sans langue sont exclues.",
+      "language": "French",
+      "contentType": "books",
+      "contentTypes": [
+        "ebook"
+      ],
+      "excludeFromDefaultMetadataProviders": true,
+      "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/libgen-fr.js",
+      "minCinderVersion": "2.0.0"
+    }
+  ]
+}
