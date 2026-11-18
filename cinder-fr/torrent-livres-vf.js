@@ -120,7 +120,7 @@ TorrentLivresVF._item = function (row) {
   var title = this._text(row.name);
   if (!title || title.length > 1000) return null;
   // N’afficher que les torrents dont la langue française est indiquée explicitement.
-  if (!/(?:^|[\\s.,()\\[\\]_-])(?:fr|fra|fre|français|francais|french|vf)(?=$|[\\s.,()\\[\\]_-])/i.test(title)) return null;
+  if (!/(?:^|[^a-z0-9])(?:fr|fra|fre|français|francais|french|vf)(?:$|[^a-z0-9])/i.test(title)) return null;
   var count = this._number(row.seeders), size = this._number(row.size), added = this._number(row.added);
   var date = added && added <= 253402300799 ? new Date(added * 1000).toISOString() : undefined;
   var formats = title.match(/\b(?:epub|pdf|mobi|azw3|fb2|cbz|cbr)\b/gi) || [];
