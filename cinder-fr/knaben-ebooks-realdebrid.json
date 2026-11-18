@@ -1,0 +1,31 @@
+{
+  "id": "knaben-ebooks-realdebrid",
+  "name": "Livres et EPUB – Knaben (Real-Debrid)",
+  "version": "2.0.0",
+  "type": "debrid",
+  "description": "Recherche des torrents de livres dans les catégories Knaben Books/EBooks. La langue doit être vérifiée dans le résultat.",
+  "icon": "book-outline",
+  "request": {
+    "method": "GET",
+    "url": "https://api.knaben.org/v2/search?q={TITLE}&sf=title&c=9001000%2C9000000&o=seeders&d=desc&s=100&dead",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "timeout": 15000
+  },
+  "response": {
+    "type": "json",
+    "resultsPath": "hits",
+    "mapping": {
+      "title": "title",
+      "url": "magnetUrl",
+      "size": "bytes",
+      "seeders": "seeders"
+    }
+  },
+  "matching": {
+    "field": "title",
+    "threshold": 0.3,
+    "algorithm": "fuzzy"
+  }
+}
