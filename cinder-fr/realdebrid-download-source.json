@@ -1,0 +1,36 @@
+{
+  "id": "apibay-ebooks-fr-realdebrid",
+  "name": "Torrents Ebooks FR – Real-Debrid",
+  "version": "1.0.0",
+  "type": "debrid",
+  "description": "Recherche de livres dans la catégorie E-books (601). Le filtre FR est une recherche par mots-clés, pas une preuve de langue. Nécessite Real-Debrid connecté à Cinder.",
+  "icon": "book-outline",
+  "request": {
+    "method": "GET",
+    "url": "https://apibay.org/q.php?q={TITLE}%20FR&cat=601",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "timeout": 15000
+  },
+  "response": {
+    "type": "json",
+    "resultsPath": "",
+    "mapping": {
+      "title": "name",
+      "url": "info_hash",
+      "size": "size",
+      "seeders": "seeders"
+    }
+  },
+  "matching": {
+    "field": "title",
+    "threshold": 0.4,
+    "algorithm": "fuzzy"
+  },
+  "debridLinkTemplate": "magnet:?xt=urn:btih:{url}&dn={title}",
+  "trackers": [
+    "udp://tracker.opentrackr.org:1337/announce",
+    "udp://open.stealth.si:80/announce"
+  ]
+}
