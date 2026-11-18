@@ -51,7 +51,7 @@ function cinderBookCatalogQuery(query) {
 var TorrentLivresVF = {
   id: "torrent-livres-vf",
   name: "Torrents Livres VF (Debrid)",
-  version: "1.0.0",
+  version: "1.0.1",
   icon: "book-outline",
   description: "Recherche de torrents de livres dont la langue française est explicitement indiquée dans le titre. Real-Debrid requis dans Cinder.",
   language: "French",
@@ -129,7 +129,7 @@ TorrentLivresVF._item = function (row) {
     id: String(row.id) + ":" + hash,
     title: title,
     url: "magnet:?xt=urn:btih:" + hash + "&dn=" + encodeURIComponent(title),
-    format: unique.length === 1 ? unique[0] : "ebook",
+    format: unique.length === 1 ? unique[0] : undefined,
     size: this._size(size), date: date,
     availability: count, availabilityLabel: "Seeders", seeders: count,
     contentType: "books", contentTypes: ["ebook"], source: this.name,
@@ -169,7 +169,7 @@ TorrentLivresVF.resolve = async function (item) {
   var identity = this._identity(item && item.id), title = this._text(item && item.title).slice(0, 1000);
   // The immutable info hash comes from the validated result ID, never an ad URL
   // or another search hit. No extra detail fetch or on-device torrent client.
-  var resolved = { debridLink: "magnet:?xt=urn:btih:" + identity.hash + (title ? "&dn=" + encodeURIComponent(title) : "") };
+  var resolved = { debridLink: "magnet:?xt=urn:btih:" + identity.hash + (title ? "&dn=" + encodeURIComponent(title) : ""), debridProvider: "realdebrid" };
   var bytes = this._number(item && item.extra && item.extra.sizeBytes);
   if (bytes !== undefined && bytes > 0) resolved.fileSize = bytes;
   return resolved;
