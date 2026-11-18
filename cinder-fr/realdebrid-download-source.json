@@ -1,13 +1,13 @@
 {
-  "id": "apibay-ebooks-fr-realdebrid",
-  "name": "Torrents Ebooks FR – Real-Debrid",
-  "version": "1.0.0",
+  "id": "knaben-ebooks-realdebrid",
+  "name": "Livres et EPUB – Knaben (Real-Debrid)",
+  "version": "2.0.0",
   "type": "debrid",
-  "description": "Recherche de livres dans la catégorie E-books (601). Le filtre FR est une recherche par mots-clés, pas une preuve de langue. Nécessite Real-Debrid connecté à Cinder.",
+  "description": "Recherche des torrents de livres dans les catégories Knaben Books/EBooks. La langue doit être vérifiée dans le résultat.",
   "icon": "book-outline",
   "request": {
     "method": "GET",
-    "url": "https://apibay.org/q.php?q={TITLE}%20FR&cat=601",
+    "url": "https://api.knaben.org/v2/search?q={TITLE}&sf=title&c=9001000%2C9000000&o=seeders&d=desc&s=100&dead",
     "headers": {
       "Accept": "application/json"
     },
@@ -15,22 +15,17 @@
   },
   "response": {
     "type": "json",
-    "resultsPath": "",
+    "resultsPath": "hits",
     "mapping": {
-      "title": "name",
-      "url": "info_hash",
-      "size": "size",
+      "title": "title",
+      "url": "magnetUrl",
+      "size": "bytes",
       "seeders": "seeders"
     }
   },
   "matching": {
     "field": "title",
-    "threshold": 0.4,
+    "threshold": 0.3,
     "algorithm": "fuzzy"
-  },
-  "debridLinkTemplate": "magnet:?xt=urn:btih:{url}&dn={title}",
-  "trackers": [
-    "udp://tracker.opentrackr.org:1337/announce",
-    "udp://open.stealth.si:80/announce"
-  ]
+  }
 }
