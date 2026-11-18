@@ -5,8 +5,8 @@
     {
       "id": "torrent-livres-vf",
       "name": "Torrents Livres VF (Debrid)",
-      "version": "1.0.0",
-      "description": "Recherche des torrents de livres marqués FR / VF / Français / French et transmet les magnets au service Debrid configuré dans Cinder.",
+      "version": "1.0.1",
+      "description": "Recherche des torrents de livres identifiés français. Dans Cinder, installer ce dépôt sous Extensions JS (pas dans Download Sources).",
       "language": "French",
       "contentType": "books",
       "contentTypes": [
@@ -16,7 +16,7 @@
       "debridSupport": "required",
       "debridDescription": "Configurer Real-Debrid dans les paramètres de Cinder.",
       "scriptUrl": "https://raw.githubusercontent.com/Nestazz/Nestazz/main/cinder-fr/torrent-livres-vf.js",
-      "minCinderVersion": "2.0.0"
+      "minCinderVersion": "1.2.4"
     }
   ]
 }
